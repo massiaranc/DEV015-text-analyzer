@@ -1,0 +1,71 @@
+body{
+    background-color:teal
+}
+header{
+    color:darkred; 
+    text-align: center;
+    font-family:sans-serif;
+    background-color:honeydew;
+    padding: 8px;
+}
+.Palabras{
+    background-color: cadetblue; 
+    border:solid 1px whitesmoke;
+   width: 200px;
+    margin: 6px; 
+    padding: 20px;
+    border-radius: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Caracteres{
+    background-color: cadetblue; 
+    border:solid 1px whitesmoke;
+   width: 200px;
+    margin: 6px; 
+    padding: 20px;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.CaracteresSinEspacios{
+    background-color: cadetblue; 
+    border:solid 1px whitesmoke;
+   width: 200px;
+    margin: 6px; 
+    padding: 20px;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Números{
+    background-color: cadetblue; 
+    border:solid 1px whitesmoke;
+   width: 200px;
+    margin: 6px; 
+    padding: 20px;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Suma{
+    background-color: cadetblue; 
+    border:solid 1px whitesmoke;
+   width: 200px;
+    margin: 6px; 
+    padding: 20px;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Promedio{
+    background-color: cadetblue; 
+    border:solid 1px whitesmoke;
+   width: 200px;
+    margin: 6px; 
+    padding: 20px;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer{
+   color:black; 
+   font-weight: bolder; 
+   font-style: oblique;
+   text-align: right;
+}
