@@ -2,38 +2,38 @@ import analyzer from './analyzer.js';
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto
 
-let texto = document.querySelector('[name="user-input"]');
-let Clasificacion = document.querySelectorAll(".Clasificacion");
+const texto = document.querySelector('[name="user-input"]');
+const Clasificacion = document.querySelectorAll(".Clasificacion");
 //clasificacion es vinculo de <li>
 const boton = document.getElementById('reset-button');
 
-let wordCountSpan = Clasificacion[0];
-let charCountSpan = Clasificacion[1];
-let charCountNoSpacesSpan = Clasificacion[2];
-let numberCountSpan = Clasificacion[3];
-let numberSumSpan = Clasificacion [4];
-let avgWordLengthSpan = Clasificacion[5];
+const wordCountSpan = Clasificacion[0];
+const charCountSpan = Clasificacion[1];
+const charCountNoSpacesSpan = Clasificacion[2];
+const numberCountSpan = Clasificacion[3];
+const numberSumSpan = Clasificacion [4];
+const avgWordLengthSpan = Clasificacion[5];
 
-let updateClasificacion = () => {
-    let text = texto.value;
+const updateClasificacion = () => {
+  const text = texto.value;
     
-    let wordCount = analyzer.getWordCount(text);
-    wordCountSpan.textContent = `Recuento de palabras: ${wordCount}`;
+  const wordCount = analyzer.getWordCount(text);
+  wordCountSpan.textContent = `Recuento de palabras: ${wordCount}`;
 
-    let charCount = analyzer.getCharacterCount(text);
-    charCountSpan.textContent = `Recuento de caracteres: ${charCount}`;
+  const charCount = analyzer.getCharacterCount(text);
+  charCountSpan.textContent = `Recuento de caracteres: ${charCount}`;
 
-    let charCountNoSpaces = analyzer.getCharacterCountExcludingSpaces(text);
-    charCountNoSpacesSpan.textContent = `Recuento de caracteres sin espacios ni signos de puntuación: ${charCountNoSpaces}`
+  const charCountNoSpaces = analyzer.getCharacterCountExcludingSpaces(text);
+  charCountNoSpacesSpan.textContent = `Recuento de caracteres sin espacios ni signos de puntuación: ${charCountNoSpaces}`
 
-    let avgWordLength = analyzer.getAverageWordLength(text);
-    avgWordLengthSpan.textContent = `Longitud media de las palabras: ${avgWordLength}`;
+  const avgWordLength = analyzer.getAverageWordLength(text);
+  avgWordLengthSpan.textContent = `Longitud media de las palabras: ${avgWordLength}`;
 
-    let numberCount = analyzer.getNumberCount(text);
-    numberCountSpan.textContent = `Recuento de números: ${numberCount}`;
+  const numberCount = analyzer.getNumberCount(text);
+  numberCountSpan.textContent = `Recuento de números: ${numberCount}`;
 
-    let numberSum = analyzer.getNumberSum(text);
-    numberSumSpan.textContent = `Suma total de números: ${numberSum}`;
+  const numberSum = analyzer.getNumberSum(text);
+  numberSumSpan.textContent = `Suma total de números: ${numberSum}`;
 
 }
 
@@ -41,8 +41,8 @@ let updateClasificacion = () => {
 
 texto.addEventListener("input", updateClasificacion);
 boton.addEventListener("click", function() {
-    texto.value = "";
-       updateClasificacion();
+  texto.value = "";
+  updateClasificacion();
 
 });
 
